@@ -1,0 +1,70 @@
+
+<html>
+<head> <title> bose </title></head>
+<style>
+#clear{
+width:128px;
+color:black;
+}
+.formstyle{
+ width:128px;
+ height:255px;
+ margin:auto;
+ border: 2px solid black;
+ }
+ input{
+ width:40px;
+ background-color:yellow;
+ color:red;
+ }
+ #answerstyle{
+ color:green;
+ width:128px
+ }
+ 
+</style>
+
+<body background="sibai.jpg" height='500' width='800'>
+<b>hi! I'm sibai & this is my calculator.To use this you've to type the numbers and the specific instruction!</b>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<div class="formstyle">
+<form name="form">
+
+<input type="text" name="answer" id="answerstyle"><br></br>
+<input type="button" value="1" onclick="form.answer.value +='1'" >
+<input type="button" value="2" onclick="form.answer.value +='2'" >
+<input type="button" value="3" onclick="form.answer.value +='3'" > 
+<br></br>   
+
+<input type="button" value="4" onclick="form.answer.value +='4'" >
+<input type="button" value="5" onclick="form.answer.value +='5'" >
+<input type="button" value="6" onclick="form.answer.value +='6'" >
+<br></br>
+
+<input type="button" value="7" onclick="form.answer.value +='7'" >
+<input type="button" value="8" onclick="form.answer.value +='8'" >
+<input type="button" value="9" onclick="form.answer.value +='9'" >
+<br></br>
+
+<input type="button" value="+" onclick="form.answer.value +='+'" >
+<input type="button" value="-" onclick="form.answer.value +='-'" >
+<input type="button" value="*" onclick="form.answer.value +='*'" > 
+<br></br>
+
+<input type="button" value="/" onclick="form.answer.value +='/'" >
+<input type="button" value="0" onclick="form.answer.value +='0'" >
+<input type="button" value="=" onclick="form.answer.value = eval(form.answer.value) " > 
+
+<br></br>
+
+<input type="button" value="clear all" onclick="form.answer.value ='' " id="clear">      
+</form>
+</div>
+</body>
+
+</html>
+  
